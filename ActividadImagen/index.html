@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejercicio de semántica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Semantica</title>
+    <link rel="stylesheet" href=""><!-- No hay style x ahora -->
+    <script></script> <!-- No hay script x ahora -->
+
+    <style>
+        /* Estils bàsics per a les imatges */
+        img {
+            border: 2px solid #000; /* Afegim un bord exterior negre */
+            padding: 5px; /* Espai entre la imatge i el seu bord */
+            display: block; /* Centrem les imatges */
+            margin: 0 auto; /* Centrem les imatges */
+        }
+        picture img {
+            width: 50%; /* Les imatges dins de <picture> ocupen la meitat de l'espai disponible */
+        }
+        h3 {
+            color: #4CAF50; /* Color verd per als títols */
+        }
+
+        .boxeo-background {
+            background-image: url('https://www.instema.net/wp-content/uploads/2014/09/boxing-sport-wallpapers-x.jpg');
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 1;
+        }
+
+        /* Estilo del botón */
+        .boxeo-button {
+            padding: 10px 20px;
+            background-color: #ff5733;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        /* Estilo de la imagen */
+        .boxeo-image {
+            width: 200px;
+            margin-top: 30px;
+            border: none;
+        }
+    </style>
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>MIPAGINA</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Imágenes</h2>
+
+            <!-- Uso la etiqueta <img> con un enlace directo -->
+            <h3>Imagen desde URL Externa</h3>
+            <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg" 
+                 alt="Imagen de ejemplo desde una URL externa" 
+                 title="Imagen de bancos de imágenes gratuitos" 
+                 width="300">
+
+            <!-- Uso un archivo local -->
+            <h3>Imagen desde archivo local</h3>
+            <img src="glass-ball-1563205_640.jpg" 
+                 alt="Imagen de una bola de cristal almacenada localmente" 
+                 title="Bola de cristal" 
+                 width="300">
+
+
+            <h3>Imagen como fondo de un elemento</h3>
+            <div class="boxeo-background">
+                <h2>Bienvenido al mundo del boxeo</h2>
+                <p>Disfruta de la mejor experiencia de boxeo con entrenamientos intensos y consejos útiles.</p>
+                <button class="boxeo-button">
+                    ¡Comienza ahora!
+                </button>
+                <img src="https://www.buddhafightwear.com/cdn/shop/files/LUZBEL.png?v=1701425739" 
+                     alt="Guantes de boxeo" 
+                     title="Guantes de boxeo Luzbel" 
+                     class="boxeo-image">
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+    
+</body>
+</html>
